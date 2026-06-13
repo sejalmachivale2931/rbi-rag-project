@@ -42,7 +42,7 @@ def load_rag():
     )
 
     llm = ChatGroq(
-        api_key= os.environ.get("GroQ_API_KEY"),
+        api_key= os.environ.get("GROQ_API_KEY"),
         model_name="llama-3.3-70b-versatile",
         temperature=0
     )
