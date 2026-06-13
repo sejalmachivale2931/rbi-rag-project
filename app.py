@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
@@ -41,7 +42,7 @@ def load_rag():
     )
 
     llm = ChatGroq(
-        api_key="Enter your Key here",
+        api_key= os.environ.get("GroQ_API_KEY"),
         model_name="llama-3.3-70b-versatile",
         temperature=0
     )
