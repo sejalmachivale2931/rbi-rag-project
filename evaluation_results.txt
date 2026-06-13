@@ -1,0 +1,12 @@
+RAG EVALUATION RESULTS
+========================================
+
+Chunk Size Tuning:
+chunk_size=500  -> Faithfulness: 0.60, Relevancy: 0.30
+chunk_size=1000 -> Faithfulness: 0.70, Relevancy: 0.40
+chunk_size=1500 -> Faithfulness: 0.70, Relevancy: 0.40
+
+Final Faithfulness:  0.80
+Final Relevancy:     0.60
+
+Conclusion: chunk_size=1000 is optimal.
